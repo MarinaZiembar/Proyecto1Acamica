@@ -47,7 +47,7 @@
 }
 
 .header img{
-    margin-left:45px;
+    margin-left:65px;
     width: 52%;
 }
 
@@ -85,7 +85,7 @@
     display:flex;
     flex-direction:column;
     margin-top:20px;
-    margin-left:45px;
+    margin-left:65px;
     width:60%;
 }
 
@@ -112,7 +112,9 @@
 
 /*------------------------------CARDS--------------------------------*/
 
-
+.cardcenter img{
+    width:50px;
+}
 
 /*------------------------------FOOTER-------------------------------*/
 
