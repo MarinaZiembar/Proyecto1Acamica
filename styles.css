@@ -112,8 +112,82 @@
 
 /*------------------------------CARDS--------------------------------*/
 
-.cardcenter img{
-    width:50px;
+.card{
+    display: flex;
+    width:620px;
+    height:182px;
+    background-color:white;
+    border-radius:12px;
+    -webkit-box-shadow: 0px 7px 14px -5px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 7px 14px -5px rgba(0,0,0,0.55);
+    box-shadow: 0px 7px 14px -5px rgba(0,0,0,0.55);
+}
+
+.cardleft img{
+    border-top-left-radius:12px;
+    border-bottom-left-radius:12px;
+    width:244px;
+}
+
+.cardcenter1{
+    color:#298A91;
+    padding-top: 12px;
+    padding-left:15px;
+}
+
+.cardcenter1 h3{
+    font-size: 16px;
+}
+
+.cardcenter1 h4{
+    font-weight:600;
+    color:#F37337;
+    margin-bottom:5px;
+}
+
+.cardcenter1 h5{
+    font-size:12px;
+    margin-bottom:5px;
+}
+
+.cardcenter1 p{
+    font-size:10px;
+    line-height:15px;
+}
+
+.cardcenter2{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding-right:10px;
+    padding-top:7px;
+}
+
+.cardcenter2 img{
+    padding-top:3px;
+    width:10px;
+    height:22px;
+}
+
+.cardcenter2 button{
+    background-color:#F37337;
+    font-family: 'montserrat';
+    font-size:12px;
+    font-weight:500;
+    color:white;
+    border: none;
+    padding:6px 14px 6px 14px;
+    border-radius: 6px;
+    cursor:pointer;
+}
+
+.cardcenter2 button:hover{
+    background: #F39A37;
+}
+
+.cardcenter2 button:active{
+    background: #F39A37;
+    border:none;
 }
 
 /*------------------------------FOOTER-------------------------------*/

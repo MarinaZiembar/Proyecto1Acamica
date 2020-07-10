@@ -14,8 +14,6 @@ const hotelsData = [
     rooms: 11,
     city: 'Buenos Aires',
     country: 'Argentina',
-    lat:,
-    lon:,
     price: 4
   },
   {
@@ -28,8 +26,6 @@ const hotelsData = [
     rooms: 23,
     city: 'Mar del Plata',
     country: 'Argentina',
-    lat:,
-    lon:,
     price: 2
   },
   {
@@ -42,8 +38,6 @@ const hotelsData = [
     rooms: 16,
     city: 'Mendoza',
     country: 'Argentina',
-    lat:,
-    lon:,
     price: 4
   },
   {
@@ -56,8 +50,6 @@ const hotelsData = [
     rooms: 32,
     city: 'Jujuy',
     country: 'Argentina',
-    lat:,
-    lon:,
     price: 1
   },
   {
@@ -70,8 +62,6 @@ const hotelsData = [
     rooms: 14,
     city: 'Salta',
     country: 'Argentina',
-    lat:,
-    lon:,
     price: 2
   },
   {
@@ -84,8 +74,6 @@ const hotelsData = [
     rooms: 16,
     city: 'Córdoba',
     country: 'Argentina',
-    lat:,
-    lon:,
     price: 1
   },
   {
@@ -98,8 +86,6 @@ const hotelsData = [
     rooms: 11,
     city: 'Corrientes',
     country: 'Argentina',
-    lat:,
-    lon:,
     price: 2
   },
   {
@@ -112,8 +98,6 @@ const hotelsData = [
     rooms: 8,
     city: 'Villa La Angostura',
     country: 'Argentina',
-    lat:,
-    lon:,
     price: 2
   },
   {
@@ -126,8 +110,6 @@ const hotelsData = [
     rooms: 9,
     city: 'Río de Janeiro',
     country: 'Brasil',
-    lat:,
-    lon:,
     price: 3
   },
   {
@@ -140,8 +122,6 @@ const hotelsData = [
     rooms: 19,
     city: 'Buzios',
     country: 'Brasil',
-    lat:,
-    lon:,
     price: 3
   },
   {
@@ -154,8 +134,6 @@ const hotelsData = [
     rooms: 11,
     city: 'Bahía',
     country: 'Brasil',
-    lat:,
-    lon:,
     price: 4
   },
   {
@@ -168,8 +146,6 @@ const hotelsData = [
     rooms: 25,
     city: 'Santa Catarina',
     country: 'Brasil',
-    lat:,
-    lon:,
     price: 4
   },
   {
@@ -182,8 +158,6 @@ const hotelsData = [
     rooms: 42,
     city: 'San Pedro de Atacama',
     country: 'Chile',
-    lat:,
-    lon:,
     price: 4
   },
   {
@@ -196,8 +170,6 @@ const hotelsData = [
     rooms: 40,
     city: 'Torres del Paine',
     country: 'Chile',
-    lat:,
-    lon:,
     price: 4
   },
   {
@@ -210,8 +182,6 @@ const hotelsData = [
     rooms: 21,
     city: 'Pucón',
     country: 'Chile',
-    lat:,
-    lon:,
     price: 4
   },
   {
@@ -224,8 +194,6 @@ const hotelsData = [
     rooms: 22,
     city: 'Millahue',
     country: 'Chile',
-    lat:,
-    lon:,
     price: 4
   },
   {
@@ -238,8 +206,6 @@ const hotelsData = [
     rooms: 20,
     city: 'Valparaíso',
     country: 'Chile',
-    lat:,
-    lon:,
     price: 4
   },
   {
@@ -252,8 +218,8 @@ const hotelsData = [
     rooms: 4,
     city: 'Colonia',
     country: 'Uruguay',
-    lat:,
-    lon:,
     price: 1
   }
 ]
+
+export default hotelsData;

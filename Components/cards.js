@@ -1,26 +1,27 @@
 import Like from './like.js';
+import hotelsData from '../data.js'
 
-class Cards extends React.Component{
-    render(){
+const Cards = props => {
         return(
             <div className='card'>
                 <div className='cardleft'>
-                    <img src='' alt='hotel'/>
+                    <img src={props.photo} alt='hotel'/>
                 </div>
-                <div className='cardcenter'>
-                    <h3>Titulo</h3>
-                    <h4>location</h4>
-                    <p>rooms</p>
-                    <p>Descripción</p>  
-                    logica de imagens
+                <div className='cardcenter1'>
+                    <h3>{props.name}</h3>
+                    <h4>{props.city},{props.country}</h4>
+                    <h5>{props.rooms} Habitaciones</h5>
+                    <p>{props.description}</p>  
+                    <div className='cardcenter2'>
+                    <img src='../images/price.png' alt='price'/>
+                    <button type='button'>RESERVAR</button>
+                    </div>
                 </div>
                 <div className='cardright'>
                     {/* <Like/> */}
-                    <button type='button'>Reservar</button>
                 </div>
             </div>
         )
-    }
 };
 
 export default Cards;
