@@ -14,6 +14,8 @@ const hotelsData = [
     rooms: 11,
     city: 'Buenos Aires',
     country: 'Argentina',
+    lat:-34.2498325,
+    lon:-59.4971244,
     price: 4
   },
   {
@@ -26,6 +28,8 @@ const hotelsData = [
     rooms: 23,
     city: 'Mar del Plata',
     country: 'Argentina',
+    lat:-38.0172131,
+    lon:-57.74062,
     price: 2
   },
   {
@@ -38,6 +42,8 @@ const hotelsData = [
     rooms: 16,
     city: 'Mendoza',
     country: 'Argentina',
+    lat:-32.8832582,
+    lon:-68.8935387,
     price: 4
   },
   {
@@ -50,6 +56,8 @@ const hotelsData = [
     rooms: 32,
     city: 'Jujuy',
     country: 'Argentina',
+    lat:-24.2051671,
+    lon:-65.3755962,
     price: 1
   },
   {
@@ -62,6 +70,8 @@ const hotelsData = [
     rooms: 14,
     city: 'Salta',
     country: 'Argentina',
+    lat:-24.7959127,
+    lon:-65.5006695,
     price: 2
   },
   {
@@ -74,6 +84,8 @@ const hotelsData = [
     rooms: 16,
     city: 'Córdoba',
     country: 'Argentina',
+    lat:-31.399084,
+    lon:-64.334431,
     price: 1
   },
   {
@@ -86,6 +98,8 @@ const hotelsData = [
     rooms: 11,
     city: 'Corrientes',
     country: 'Argentina',
+    lat:-27.4860818,
+    lon:-58.8624274,
     price: 2
   },
   {
@@ -98,6 +112,8 @@ const hotelsData = [
     rooms: 8,
     city: 'Villa La Angostura',
     country: 'Argentina',
+    lat:-40.7632679,
+    lon:-71.6504163,
     price: 2
   },
   {
@@ -110,6 +126,8 @@ const hotelsData = [
     rooms: 9,
     city: 'Río de Janeiro',
     country: 'Brasil',
+    lat:-22.0597003,
+    lon:-44.0445117,
     price: 3
   },
   {
@@ -122,6 +140,8 @@ const hotelsData = [
     rooms: 19,
     city: 'Buzios',
     country: 'Brasil',
+    lat:-22.7614778,
+    lon:-41.9533836,
     price: 3
   },
   {
@@ -134,6 +154,8 @@ const hotelsData = [
     rooms: 11,
     city: 'Bahía',
     country: 'Brasil',
+    lat:-13.3837623,
+    lon:-46.482426,
     price: 4
   },
   {
@@ -146,6 +168,8 @@ const hotelsData = [
     rooms: 25,
     city: 'Santa Catarina',
     country: 'Brasil',
+    lat:-27.6307535,
+    lon:-53.3272919,
     price: 4
   },
   {
@@ -158,6 +182,8 @@ const hotelsData = [
     rooms: 42,
     city: 'San Pedro de Atacama',
     country: 'Chile',
+    lat:-22.9139737,
+    lon:-68.2161743,
     price: 4
   },
   {
@@ -170,6 +196,8 @@ const hotelsData = [
     rooms: 40,
     city: 'Torres del Paine',
     country: 'Chile',
+    lat:-51.2591527,
+    lon:-72.3537548,
     price: 4
   },
   {
@@ -182,6 +210,8 @@ const hotelsData = [
     rooms: 21,
     city: 'Pucón',
     country: 'Chile',
+    lat:-39.2803931,
+    lon:-71.9766899,
     price: 4
   },
   {
@@ -194,6 +224,8 @@ const hotelsData = [
     rooms: 22,
     city: 'Millahue',
     country: 'Chile',
+    lat:-34.5243405,
+    lon:-71.2199254,
     price: 4
   },
   {
@@ -206,6 +238,8 @@ const hotelsData = [
     rooms: 20,
     city: 'Valparaíso',
     country: 'Chile',
+    lat:-33.050631,
+    lon:-71.6460682,
     price: 4
   },
   {
@@ -218,6 +252,8 @@ const hotelsData = [
     rooms: 4,
     city: 'Colonia',
     country: 'Uruguay',
+    lat:-34.118456,
+    lon:-58.262276,
     price: 1
   }
 ]
