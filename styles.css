@@ -114,7 +114,7 @@
 
 .card{
     display: flex;
-    width:620px;
+    width:625px;
     height:182px;
     background-color:white;
     border-radius:12px;
@@ -129,47 +129,47 @@
     width:244px;
 }
 
-.cardcenter1{
+.cardright1{
     color:#298A91;
-    padding-top: 12px;
-    padding-left:15px;
+    padding: 12px 15px 0px 15px;
 }
 
-.cardcenter1 h3{
+.cardright1 h3{
     font-size: 16px;
 }
 
-.cardcenter1 h4{
+.cardright1 h4{
     font-weight:600;
     color:#F37337;
     margin-bottom:5px;
 }
 
-.cardcenter1 h5{
+.cardright1 h5{
     font-size:12px;
     margin-bottom:5px;
 }
 
-.cardcenter1 p{
+.cardright1 p{
     font-size:10px;
     line-height:15px;
 }
 
-.cardcenter2{
+.cardright3{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    padding-right:10px;
-    padding-top:7px;
+    padding-right:5px;
+    padding-top:4px;
 }
 
-.cardcenter2 img{
+.cardright3 img{
     padding-top:3px;
+    margin-right:10px;
     width:10px;
     height:22px;
 }
 
-.cardcenter2 button{
+.cardright3 button{
     background-color:#F37337;
     font-family: 'montserrat';
     font-size:12px;
@@ -181,14 +181,27 @@
     cursor:pointer;
 }
 
-.cardcenter2 button:hover{
+.cardright3 button:hover{
     background: #F39A37;
 }
 
-.cardcenter2 button:active{
+.cardright3 button:active{
     background: #F39A37;
     border:none;
 }
+
+.cardright2{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-bottom:-17px;
+}
+
+.cardright2 img{
+    width:30px;
+    margin-right:5px;
+}
+
 
 /*------------------------------FOOTER-------------------------------*/
 

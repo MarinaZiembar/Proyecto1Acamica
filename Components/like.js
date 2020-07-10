@@ -1,5 +1,4 @@
-import like from '../images/corat.png';
-import dislike from '../images/coraf.png';
+
 
 class Like extends React.Component{
     state = {
@@ -18,7 +17,7 @@ class Like extends React.Component{
         return(
             <div>
                 {this.state.heart === false ? 
-                (<img className="heart" onClick={this.handleLike} src={dislike} alt="coraf"/>) : (<img className="heart" onClick={this.handleLike} src={like} alt="corat"/>)}
+                (<img className="heart" onClick={this.handleLike} src='../images/coraf.png' alt="coraf"/>) : (<img className="heart" onClick={this.handleLike} src='../images/corat.png' alt="corat"/>)}
             </div> 
         )
     }
