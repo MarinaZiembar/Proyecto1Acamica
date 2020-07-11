@@ -15,8 +15,8 @@ class App extends React.Component{
                     <FilterInfo/>
                 </div>
                 <div className='main'>
-                  <Filters/>
-                  <CardsList/>
+                    <Filters/>
+                    <CardsList/>
                 </div>    
                 <Footer/>
             </div>

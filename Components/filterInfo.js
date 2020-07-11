@@ -1,12 +1,6 @@
-
+import Filters from './filters.js'
 
 class FilterInfo extends React.Component{
-
-    state={
-        filtros:[
-            
-        ]
-    };
 
     render(){
         return(

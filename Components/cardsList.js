@@ -1,5 +1,6 @@
 import Cards from './cards.js';
 import hotelsData from './data.js';
+import Filters from './filters.js';
 
 class CardsList extends React.Component{
     render(){

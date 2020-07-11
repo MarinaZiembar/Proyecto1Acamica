@@ -1,4 +1,5 @@
-
+import Select from './select.js'
+import Input from './input.js'
 
 class Filters extends React.Component{
 
@@ -7,12 +8,12 @@ class Filters extends React.Component{
         fsalida: "",
         pais: "",
         precio:"",
-        habitaciones:""
+        tamaño:""
       };
 
     handleInputChange = e =>{
         this.setState({[e.target.name]:e.target.value})
-   };
+    };
 
     render(){
         return(
@@ -20,30 +21,11 @@ class Filters extends React.Component{
                 <div className='filtro2'>
                 <h1>Hoteles</h1>
                 <form className='filtro3'>
-                    <label for="fentrada">Fecha de entrada</label>
-                    <input type="date" id="fentrada" name="fentrada" value={this.state.fentrada} onChange={this.handleInputChange} />
-                    <label for="fsalida">Fecha de salida</label>
-                    <input type="date" id="fsalida" name="fsalida" value={this.state.fsalida} onChange={this.handleInputChange} />
-                    <select onChange={this.handleInputChange} name="pais" id="pais">
-                        <option value="default1" selected disabled>Cualquier pais</option>
-                        <option value="argentina">Argentina</option>
-                        <option value="brasil">Brasil</option>
-                        <option value="chile">Chile</option>
-                        <option value="uruguay">Uruguay</option>
-                    </select>
-                    <select onChange={this.handleInputChange} name="precio" id="precio">
-                        <option value="default2" selected disabled>Cualquier precio</option>
-                        <option value="1">$</option>
-                        <option value="2">$$</option>
-                        <option value="3">$$$</option>
-                        <option value="4">$$$$</option>
-                    </select>
-                    <select onChange={this.handleInputChange} name="habitaciones" id="habitaciones">
-                        <option value="default3" selected disabled>Cualquier tamaño</option>
-                        <option value="pequeño">Hotel pequeño</option>
-                        <option value="mediano">Hotel mediano</option>
-                        <option value="grande">Hotel grande</option>
-                    </select>
+                    <Input name="fentrada" handleInputChange={this.handleInputChange} value={this.state.fentrada} />
+                    <Input name="fsalida" handleInputChange={this.handleInputChange} value={this.state.fsalida} />
+                    <Select name="pais" handleInputChange={this.handleInputChange} first="Argentina" second="Brasil" third="Chile" fourth="Uruguay"/>
+                    <Select name="precio" handleInputChange={this.handleInputChange} first="$" second="$$" third="$$$" fourth="$$$$"/>
+                    <Select name="tamaño" handleInputChange={this.handleInputChange} first="Hotel Pequeño" second="Hotel Mediano" third="Hotel Grande" />
                 </form>
                 </div>
             </div>
