@@ -1,9 +1,8 @@
 import Cards from './cards.js';
 import hotelsData from './data.js';
-import Filters from './filters.js';
 
-class CardsList extends React.Component{
-    render(){
+
+const CardsList = props =>{
         return(
             <div className="cardsList">
                 {
@@ -11,7 +10,6 @@ class CardsList extends React.Component{
                 }
             </div>
         )
-    };
 };
 
 export default CardsList;

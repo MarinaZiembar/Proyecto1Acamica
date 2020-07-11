@@ -2,17 +2,15 @@
 import FilterInfo from './filterInfo.js'
 
 
-class Header extends React.Component{
-    render(){
+const Header = props =>{
         return(
             <div className='top'>
             <div class='header'>
                 <img src='./images/logo.png' alt='logo'/>
             </div>
-            <FilterInfo/>
+            <FilterInfo fentrada={props.fentrada} fsalida={props.fsalida} />
             </div>   
         )
-    };
 };
 
 export default Header;

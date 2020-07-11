@@ -5,11 +5,23 @@ import "../styles.css"
 
 
 class App extends React.Component{
+    state = {
+        fentrada: "",
+        fsalida: "",
+        pais: "",
+        precio:"",
+        tamaño:"",
+      };
+
+    handleInputChange = e =>{
+        this.setState({[e.target.name]:e.target.value})
+    };
+
     render(){
         return(
             <div>
-                <Header/>
-                <Main/>    
+                <Header fentrada={this.state.fentrada} fsalida={this.state.fsalida}/>
+                <Main handleInputChange={this.handleInputChange} fentrada={this.state.fentrada} fsalida={this.state.fsalida} pais={this.state.pais} precio={this.state.precio} tamaño={this.state.tamaño} />    
                 <Footer/>
             </div>
         )
