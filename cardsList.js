@@ -15,7 +15,7 @@ const CardsList = props => {
 
         return(
             <div className="cardsList">
-                {nuevoArray}
+                {}
             </div>
             )
 };

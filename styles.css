@@ -5,8 +5,10 @@
 }
 
 #map canvas{
-    cursor:default;
+    cursor:pointer;
 }
+
+
 
 #app{
     font-family: 'montserrat';
