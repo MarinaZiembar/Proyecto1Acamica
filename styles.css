@@ -5,9 +5,8 @@
 }
 
 #map canvas{
-    cursor:pointer;
+    cursor:default;
 }
-
 
 
 #app{
@@ -37,6 +36,7 @@
     display:flex;
     align-items: center;
     justify-content: left;
+    position:fixed;
     margin-left: 30px;
     width:26vw;
     height:17vh;
@@ -59,9 +59,18 @@
     margin-top:30px;
     text-align:right;
     font-size: 18px;
+    margin-left:70vw;
     line-height:25px;
     font-weight: 600;
     color:#298A91;
+    position:fixed;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding:10px 20px 10px 20px;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 7px 9px -5px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 7px 9px -5px rgba(0,0,0,0.35);
+    box-shadow: 0px 7px 9px -5px rgba(0,0,0,0.35);
+    
 }
 
 /*---------------------------FILTROS-------------------------------------*/
@@ -71,12 +80,13 @@
     flex-direction: column;
     justify-content:center;
     align-content: center;
+    position:fixed;
     width:26vw;
-    height:80%;
+    height:63vh;
     background-color: #C3E2E5;
     color:#396668;
     margin-left:30px;
-    margin-top:40px;
+    margin-top:25vh;
     border-radius: 12px;
     -webkit-box-shadow: 0px 7px 14px -5px rgba(0,0,0,0.55);
     -moz-box-shadow: 0px 7px 14px -5px rgba(0,0,0,0.55);
@@ -117,8 +127,9 @@
 
 .card{
     display: flex;
+    align-items:center;
     width:625px;
-    height:182px;
+    height:190px;
     background-color:white;
     border-radius:12px;
     -webkit-box-shadow: 0px 7px 14px -5px rgba(0,0,0,0.55);
@@ -126,10 +137,14 @@
     box-shadow: 0px 7px 14px -5px rgba(0,0,0,0.55);
 }
 
+.cardleft{
+    height:100%;
+}
+
 .cardleft img{
     border-top-left-radius:12px;
     border-bottom-left-radius:12px;
-    width:244px;
+    height:190px;
 }
 
 .cardright1{
@@ -161,13 +176,15 @@
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    padding-right:5px;
-    padding-top:4px;
+    align-items:flex-end;
+    margin-bottom: 10px;
+    color:white;
+    
 }
 
 .cardright3 img{
+    margin-top:6px;
     padding-top:3px;
-    margin-right:10px;
     width:8px;
     height:20px;
 }
@@ -197,16 +214,11 @@
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    margin-bottom:-17px;
 }
 
 .cardright2 img{
     width:30px;
     margin-right:5px;
-}
-
-.ocultar{
-    display:hidden;
 }
 
 
@@ -216,8 +228,10 @@
     display:flex;
     justify-content:center;
     align-items: center;
+    position:fixed;
     font-size:11px;
     margin-left:81vw;
+    margin-top:17vh;
     width:17vw;
     height:6vh;
     background-color:#298A91;

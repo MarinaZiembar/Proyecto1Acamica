@@ -14,8 +14,8 @@ const FilterInfo = props =>{
 
 
         return(
-            <div className='filterinfo'>
-               {(!props.fentrada||!props.fsalida) ? (<p></p>) : (<p>Estadía de <strong>{d-dd} noches</strong><br></br>Desde el <strong> {dd + '/' + mm + '/' + yyyy} </strong> hasta <strong> {d + '/' + m + '/' + yy} </strong></p>)}
+            <div>
+               {(!props.fentrada||!props.fsalida) ? "" : (<div className="filterinfo"><p>Estadía de <strong>{d-dd} noches</strong><br></br>Desde el <strong> {dd + '/' + mm + '/' + yyyy} </strong> hasta <strong> {d + '/' + m + '/' + yy} </strong></p></div>)}
             </div>
         )
 };

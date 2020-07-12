@@ -1,5 +1,4 @@
 import hotelsData from './data.js'
-import Cards from './cards.js'
 import './styles.css'
 
 
@@ -11,8 +10,9 @@ class Map extends React.Component{
         let map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/marinazeta/ckcdovcle063x1ipiu3yc5a2l',
-        center: [-64.6463709,-30.630524],
-        zoom: 4
+        center: [-71.919281,-31.9401036],
+        zoom: 3,
+        minZoom:3,
         });
 
         //Inhabilitadores de movilidad
@@ -22,9 +22,10 @@ class Map extends React.Component{
         map.dragRotate.disable();
         map.doubleClickZoom.disable();
 
+        let array=[1,2,3,4];
 
         var points= hotelsData.map(card=>(new mapboxgl.Marker({color: '#F37337'})
-        .setPopup(new mapboxgl.Popup({closeButton:false}).setHTML("<div className='cardsplace'></div>"))
+        .setPopup(new mapboxgl.Popup({closeButton:false}).setHTML('<div class="card"><div class="cardleft"><img src='+card.photo+' alt="hotel"/></div><div class="cardright1"><div class="cardright2"><h3>'+card.name+'</h3></div><h4>'+card.city+', '+ card.country+'</h4><h5>'+card.rooms+' Habitaciones</h5><p>'+card.description+'</p><div class="cardright3"><div>'+ (array.filter(num => num <= card.price)).map(sign => ('<img src="./images/price.png" alt="price"/>')) +'</div><div><button type="button">RESERVAR</button>)</div></div></div>'))
         .setLngLat([card.lon, card.lat])
         .addTo(map)))
 
