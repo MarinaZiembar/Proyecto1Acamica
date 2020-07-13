@@ -7,6 +7,8 @@
 
 #map{
     font-family:'Montserrat';
+    position:absolute;
+    z-index:2;
 }
 
 
@@ -25,23 +27,15 @@
 }
 
 
-#app{
-    font-family: 'montserrat';
-    display: flex;
-    flex-direction: column;
-}
-
 .top{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
 }
 
-.main{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height:77vh;
+.app{
+    position:absolute;
+    z-index:45;
 }
 
 
@@ -247,7 +241,7 @@
     position:fixed;
     font-size:11px;
     margin-left:81vw;
-    margin-top:17vh;
+    margin-top:94vh;
     width:17vw;
     height:6vh;
     background-color:#298A91;
