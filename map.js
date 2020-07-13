@@ -1,12 +1,26 @@
 import hotelsData from './data.js'
+import App from './app.js'
 import './styles.css'
 
 
  
 class Map extends React.Component{
-    render(){
 
-        mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaW5hemV0YSIsImEiOiJja2Njc2p2bmkwN3ByMnVxa3I3djhvbmR5In0.OEvxtbTXnnIHjWxjhqye4w';
+    state = {
+        fentrada: "",
+        fsalida: "",
+        pais: "",
+        precio:"",
+        tamaño:"",
+      };
+
+    handleInputChange = e =>{
+        this.setState({[e.target.name]:e.target.value})
+    };
+
+    render(){
+        //Mapbox Init
+          mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaW5hemV0YSIsImEiOiJja2Njc2p2bmkwN3ByMnVxa3I3djhvbmR5In0.OEvxtbTXnnIHjWxjhqye4w';
         let map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/marinazeta/ckcdovcle063x1ipiu3yc5a2l',
@@ -21,7 +35,8 @@ class Map extends React.Component{
         map.dragPan.disable();
         map.dragRotate.disable();
         map.doubleClickZoom.disable();
-
+        
+        //Logica de puntos en el mapa y tarjetas
         let array=[1,2,3,4];
 
         var points= hotelsData.map(card=>(new mapboxgl.Marker({color: '#F37337'})
@@ -32,13 +47,12 @@ class Map extends React.Component{
 
         return(
             <div>
-                {points}
+                <App handleInputChange={this.handleInputChange} fentrada={this.state.fentrada} fsalida={this.state.fsalida} pais={this.state.pais} precio={this.state.precio} tamaño={this.state.tamaño} />
             </div>
         )
     }
 }
 
-export default Map;
 
 const rootElement = document.getElementById("map");
 ReactDOM.render(<Map />,rootElement);
