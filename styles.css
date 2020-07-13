@@ -39,6 +39,14 @@
 }
 
 
+.error{
+    height:30vh;
+    width:30vw;
+    background-color:red;
+    position:absolute;
+    z-index:50;
+}
+
 
 /*------------------------------HEADER-----------------------------------*/
 

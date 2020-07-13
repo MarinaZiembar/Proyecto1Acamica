@@ -1,5 +1,6 @@
 import hotelsData from './data.js'
 import App from './app.js'
+import Error from './error.js'
 import './styles.css'
 
 
@@ -12,6 +13,7 @@ class Map extends React.Component{
         pais: "pais",
         precio:"precio",
         tamaño:"tamaño",
+        error:false,
       };
 
     handleInputChange = e =>{
@@ -42,10 +44,10 @@ class Map extends React.Component{
         //Logica de puntos en el mapa y tarjetas
         let array=[1,2,3,4];
 
-        const fechaentrada=;
-        const fechasalida=;
+        const fechaentrada=Date.parse(new Date(fentrada));
+        const fechasalida=Date.parse(new Date(fsalida));
 
-        let filtrofechas=hotelsData.filter(result=>(result.availabilityFrom>=fechaentrada&&result.availabilityTo<=fechasalida));
+        let filtrofechas=hotelsData.filter(result=>(result.availabilityFrom<=fechaentrada&&result.availabilityTo>=fechasalida)||(fentrada===""&&fsalida===""));
 
         let filtropais=filtrofechas.filter(result=>((result.country===pais||pais==="pais")))
 
@@ -58,9 +60,12 @@ class Map extends React.Component{
         .setLngLat([card.lon, card.lat])
         .addTo(map)))
 
+
         return(
             <div className="app">
+                 
                 <App handleInputChange={this.handleInputChange} fentrada={this.state.fentrada} fsalida={this.state.fsalida} pais={this.state.pais} precio={this.state.precio} tamaño={this.state.tamaño} />
+
             </div>
         )
     }
