@@ -469,3 +469,78 @@
     }
 }
 
+/*------------------------------MEDIA QUERIES BIGSCREEN-------------------------------*/
+@media (min-width:1390px){
+
+    .header img{
+        margin-left:50px;
+        width: 65%;
+    }
+
+    .filtro2 h1{
+        font-size:28px;
+        padding-bottom:17px;
+    }
+
+    .filtro3 label{
+        font-size: 16px;
+        padding-bottom:15px;
+    }
+    
+    .filtro3 input{
+        width:195px;
+        height:35px;
+        margin-bottom:18px;
+    }
+    
+    .filtro3 select{
+        width:195px;
+        height:35px;
+        margin-bottom:25px;
+    }
+    
+
+    .filterinfo{
+        font-size: 22px;
+        margin-left:64vw;
+        line-height:30px;
+        padding:10px 20px 10px 30px;  
+    }
+
+    .error{
+        width:30vw;
+    }
+    
+    .error h3{
+        font-size:48px;
+        padding-bottom:18px;
+        padding-top:22px;
+    }
+    
+    .error p{
+        font-size: 22px;
+        line-height:25px;
+    }
+    
+    .error h4{
+        font-size: 15px;
+    }
+    
+    .error2{
+        width:62%;
+        padding-bottom:15px;
+    } 
+    
+    .error2 img{
+        width:60px;
+        height:60px;
+    }
+
+    .footer{
+        font-size:16px;
+        margin-left:76vw;
+        width:22vw;
+        height:7vh;
+    }
+
+}
