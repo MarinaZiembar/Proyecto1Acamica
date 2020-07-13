@@ -20,6 +20,7 @@ class Map extends React.Component{
 
 
     render(){
+
         const{fentrada, fsalida, pais, precio, tamaño}=this.state
 
         //Mapbox Init
@@ -35,20 +36,27 @@ class Map extends React.Component{
         //Inhabilitadores de movilidad
         map.boxZoom.disable();
         map.scrollZoom.disable();
-        map.dragPan.disable();
         map.dragRotate.disable();
         map.doubleClickZoom.disable();
         
         //Logica de puntos en el mapa y tarjetas
         let array=[1,2,3,4];
 
-        var filtered=hotelsData.filter(result=>(result.country===pais||pais==="pais"));
+        const fechaentrada=;
+        const fechasalida=;
 
-        var points= filtered.map(card=>(new mapboxgl.Marker({color: '#F37337'})
+        let filtrofechas=hotelsData.filter(result=>(result.availabilityFrom>=fechaentrada&&result.availabilityTo<=fechasalida));
+
+        let filtropais=filtrofechas.filter(result=>((result.country===pais||pais==="pais")))
+
+        let filtrotamaño=filtropais.filter(result=>(((tamaño==="Hotel Pequeño"&&result.rooms<=10)||(tamaño==="Hotel Mediano"&&result.rooms>=11&&result.rooms<=20)||(tamaño==="Hotel Grande"&&result.rooms>=21)||tamaño==="tamaño")))
+
+        let filtroprecio=filtrotamaño.filter(result=>(((precio==="$"&&result.price===1)||(precio==="$$"&&result.price===2)||(precio==="$$$"&&result.price===3)||(precio==="$$$$"&&result.price===4)||precio==="precio")))
+
+        let points= filtroprecio.map(card=>(new mapboxgl.Marker({color: '#F37337'})
         .setPopup(new mapboxgl.Popup({closeButton:false}).setHTML('<div class="card"><div class="cardleft"><img src='+card.photo+' alt="hotel"/></div><div class="cardright1"><div class="cardright2"><h3>'+card.name+'</h3></div><h4>'+card.city+', '+ card.country+'</h4><h5>'+card.rooms+' Habitaciones</h5><p>'+card.description+'</p><div class="cardright3"><div>'+ (array.filter(num => num <= card.price)).map(sign => ('<img src="./images/price.png" alt="price"/>')) +'</div><div><button type="button">RESERVAR</button>)</div></div></div>'))
         .setLngLat([card.lon, card.lat])
         .addTo(map)))
-
 
         return(
             <div className="app">
