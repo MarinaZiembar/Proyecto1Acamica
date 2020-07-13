@@ -3,7 +3,7 @@
 class Footer extends React.Component{
     render(){
         return(
-            <div className='footer'>
+            <div className='footer animate__animated animate__slideInUp'>
                 <p>True Nomad © | Mar!na 2020</p>
             </div>
         )

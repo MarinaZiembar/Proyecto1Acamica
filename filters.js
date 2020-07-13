@@ -4,7 +4,7 @@ import Input from './input.js'
 const Filters = props =>{
 
         return(
-            <div className='filtro1'>
+            <div className='filtro1 animate__animated animate__fadeIn'>
                 <div className='filtro2'>
                 <h1>Hoteles</h1>
                 <form className='filtro3'>
