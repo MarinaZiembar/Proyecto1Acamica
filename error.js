@@ -1,6 +1,5 @@
 
-class Error extends React.Component{
-    render(){
+const Error = ()=>{
         return(
             <div className="error animate__animated animate__zoomIn">
                 <div className="error2"><img src="./images/binoculars.png" alt="ups"/><h3>UPS!</h3></div>
@@ -8,7 +7,7 @@ class Error extends React.Component{
                 <h4>Probá de nuevo modificando los filtros.</h4>
             </div>
         )
-    }
+    
 }
 
 export default Error;

@@ -6,10 +6,19 @@ import "./styles.css"
 
 const App = props =>{
 
+        const{fentrada, fsalida, handleInputChange}=props
+
         return(
             <div>
-                <Header fentrada={props.fentrada} fsalida={props.fsalida}/>
-                <Filters handleInputChange={props.handleInputChange} fentrada={props.fentrada} fsalida={props.fsalida} />   
+                <Header 
+                fentrada={fentrada} 
+                fsalida={fsalida}/>
+
+                <Filters 
+                handleInputChange={handleInputChange} 
+                fentrada={fentrada} 
+                fsalida={fsalida} />  
+                 
                 <Footer/>
             </div>
         )

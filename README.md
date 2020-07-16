@@ -10,7 +10,7 @@ TRUE NOMAD - Reserva de Alojamientos
 *Los iconos pertenecen a FlatIcon.
 *La marca es invención mía.
 *Mucho de lo que es el renderizado del mapa está muy desprolijo en el componente ya que la extensión hecha especialmente para utilizar 
-la api de Mapbox con React sólo puede ser utilizada a través de node.js y tuve que hacer unas tramoyas interesantes para que ande, inclusive poner los componentes sueltos juntos con el index.html. 
+la api de Mapbox con React sólo puede ser utilizada a través de node.js y tuve que hacer unas tramoyas interesantes para que ande, inclusive poner los componentes sueltos juntos con el index.html o poner el INIT e INHABILITADORES en el render() en vez de en componentDidMount(). 
 *Las media queries se encuentran al final del archivo styles.css, primero pantalla promedio, luego mobile y por último big screen.
 
 

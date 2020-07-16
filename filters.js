@@ -2,18 +2,42 @@ import Select from './select.js'
 import Input from './input.js'
 
 const Filters = props =>{
+    
+    const{fentrada, fsalida, handleInputChange}=props
 
         return(
             <div className='filtro1 animate__animated animate__fadeIn'>
                 <div className='filtro2'>
-                <h1>Hoteles</h1>
-                <form className='filtro3'>
-                    <Input tag="fentrada" name="entrada" handleInputChange={props.handleInputChange} value={props.fentrada} />
-                    <Input tag="fsalida" name="salida" handleInputChange={props.handleInputChange} value={props.fsalida}  value2={props.fentrada}/>
-                    <Select name="pais" handleInputChange={props.handleInputChange} first="Argentina" second="Brasil" third="Chile" fourth="Uruguay"/>
-                    <Select name="precio" handleInputChange={props.handleInputChange} first="$" second="$$" third="$$$" fourth="$$$$"/>
-                    <Select name="tamaño" handleInputChange={props.handleInputChange} first="Hotel Pequeño" second="Hotel Mediano" third="Hotel Grande" />
-                </form>
+                    <h1>Hoteles</h1>
+                    <form className='filtro3'>
+                        <Input 
+                        tag="fentrada" 
+                        name="entrada" 
+                        handleInputChange={handleInputChange} 
+                        value={fentrada} />
+
+                        <Input 
+                        tag="fsalida" 
+                        name="salida" 
+                        handleInputChange={handleInputChange} 
+                        value={fsalida} 
+                        value2={fentrada}/>
+
+                        <Select 
+                        name="pais" 
+                        handleInputChange={handleInputChange} 
+                        options={["Cualquier pais","Argentina","Brasil","Chile","Uruguay"]} />
+
+                        <Select 
+                        name="precio" 
+                        handleInputChange={handleInputChange} 
+                        options={["Cualquier precio","$","$$","$$$","$$$$"]}/>
+
+                        <Select 
+                        name="tamaño" 
+                        handleInputChange={handleInputChange} 
+                        options={["Cualquier tamaño","Hotel Pequeño","Hotel Mediano","Hotel Grande"]} />
+                    </form>
                 </div>
             </div>
         )
