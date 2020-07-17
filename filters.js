@@ -11,31 +11,31 @@ const Filters = props =>{
                     <h1>Hoteles</h1>
                     <form className='filtro3'>
                         <Input 
-                        tag="fentrada" 
-                        name="entrada" 
                         handleInputChange={handleInputChange} 
+                        name="entrada" 
+                        tag="fentrada" 
                         value={fentrada} />
 
                         <Input 
-                        tag="fsalida" 
-                        name="salida" 
                         handleInputChange={handleInputChange} 
+                        name="salida" 
+                        tag="fsalida" 
                         value={fsalida} 
                         value2={fentrada}/>
 
                         <Select 
-                        name="pais" 
                         handleInputChange={handleInputChange} 
+                        name="pais" 
                         options={["Cualquier pais","Argentina","Brasil","Chile","Uruguay"]} />
 
                         <Select 
-                        name="precio" 
                         handleInputChange={handleInputChange} 
+                        name="precio" 
                         options={["Cualquier precio","$","$$","$$$","$$$$"]}/>
 
                         <Select 
-                        name="tamaño" 
                         handleInputChange={handleInputChange} 
+                        name="tamaño" 
                         options={["Cualquier tamaño","Hotel Pequeño","Hotel Mediano","Hotel Grande"]} />
                     </form>
                 </div>
